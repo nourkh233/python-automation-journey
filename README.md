@@ -9,7 +9,7 @@ Combiner programmation Python et automatisation industrielle (PLC, communication
 ## Progression
 
 - [x] Étape 1 — zones_frequence.py : simulateur des zones Andon (39/35/32 Hz), avec validation d'entrée 0-50 Hz et gestion des erreurs
-- [ ] Étape 2 — Logger CSV : enregistrement et analyse de données industrielles
+- [x] Étape 2 — Logger CSV : enregistrement et analyse de données industrielles
 - [ ] Étape 3 — POO : simulateur de machine (états RUNNING/WARNING/FAULT)
 - [ ] Étape 4 — Projet final : monitoring Python connecté à une logique Modbus/PLC
 

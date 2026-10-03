@@ -3,22 +3,24 @@
 # # Seuils bases sur le cahier des charges reel : 39/35/32 Hz
 def zone_frequence(frequence):
     if frequence >= 39:
-        return "la couleur afficher est bleu"
+        return "BLEU"
     elif frequence >= 35 and frequence < 39:
-        return "la couleur afficher est verte"
+        return "VERT"
     elif frequence < 35 and frequence >= 32:
-        return "la couleur afficher est orange"
+        return "ORANGE"
     else:
-        return "la couleur afficher est rouge"
+        return "ROUGE"
 
 
-try:
-    frequence = float(input("Entrez une frequence entre 0 et 50 : "))
+if __name__ == "__main__":
 
-    if frequence < 0 or frequence > 50:
-        raise ValueError("frequence hors limites")
+    try:
+        frequence = float(input("Entrez une frequence entre 0 et 50 : "))
 
-    print(zone_frequence(frequence))
+        if frequence < 0 or frequence > 50:
+            raise ValueError("frequence hors limites")
 
-except ValueError:
-    print("Erreur : entrez un nombre compris entre 0 et 50.")
+        print(f"la couleur afficher est {zone_frequence(frequence)}")
+
+    except ValueError:
+        print("Erreur : entrez un nombre compris entre 0 et 50.")
